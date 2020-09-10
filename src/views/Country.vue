@@ -19,7 +19,7 @@
                     <div>
                         <p><span>Top Level Domain:</span> {{ item.topLevelDomain[0] }}</p>
                         <p v-for="item in item.currencies" :key="item"><span>Currencies:</span> {{ item.code }}</p>
-                        <div class="multi-list"><span>Languages: </span><p v-for="item in item.languages" :key="item"> {{ item.name }},</p></div>
+                        <div class="multi-list"><span>Languages: </span><p class="border-buttons" v-for="item in item.languages" :key="item">{{ item.name }}</p></div>
                     </div>
                 </div>
 
@@ -130,6 +130,15 @@ h1 {
 }
 
 @media(max-width: 768px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .border-buttons {
+        padding: 0px;
+        margin: 10;
+    }
+
     .country-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
