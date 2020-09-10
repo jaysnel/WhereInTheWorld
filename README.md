@@ -1,4 +1,4 @@
-# rest-ountries
+# rest-countries
 
 ## Project setup
 ```
