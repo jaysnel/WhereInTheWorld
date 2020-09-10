@@ -1,0 +1,91 @@
+$color-dark: rgb(0,0,0);
+$bg-color-light: rgb(250,250,250);
+$color-light: rgb(255,255,255);
+$bg-color-light-lighter: #fff;
+$bg-color-dark: rgb(32,44,55);
+$bg-color-dark-lighter: rgb(43,57,69);
+
+input:focus,
+select:focus {
+    border: none;
+}
+
+.light-theme {
+    #app {
+        background-color: $bg-color-light;
+    }
+
+    .back-button {
+        background-color: $bg-color-light;
+        color: $color-dark;
+        box-shadow: 0 1px 3px $bg-color-dark-lighter;
+
+        &:hover {
+            background-color: $bg-color-light;
+            color: $color-dark;
+        }
+    }
+
+    .card,
+    input,
+    select {
+        background-color: $bg-color-light;
+        color: $color-dark;
+    }
+
+    
+    .top-bar,
+    .top-bar div {
+        background-color: $bg-color-light-lighter !important;
+        color: $color-dark !important;
+    }
+
+    input:focus,
+    select:focus {
+        background-color: $bg-color-light-lighter;
+        color: $color-dark;
+    }
+
+    .country-container .flag img {
+        border: 15px solid $bg-color-light;
+    }
+}
+
+
+.dark-theme {
+    #app,
+    .card,
+    input,
+    select {
+        background-color: $bg-color-dark;
+        color: $color-light;
+    }
+
+    .back-button {
+        background-color: $bg-color-dark;
+        color: $color-light;
+        box-shadow: 0 0 2px $bg-color-light;
+
+        &:hover {
+            background-color: $bg-color-dark;
+            color: $color-light;
+        }
+    }
+
+    
+    .top-bar,
+    .top-bar div {
+        background-color: $bg-color-dark-lighter !important;
+        color: $color-light !important;
+    }
+
+    input:focus,
+    select:focus {
+        background-color: $bg-color-dark;
+        color: $color-light;
+    }
+
+    .country-container .flag img {
+        border: 15px solid $bg-color-dark-lighter;
+    }
+}

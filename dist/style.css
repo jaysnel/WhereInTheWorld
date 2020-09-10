@@ -1,0 +1,68 @@
+input:focus,
+select:focus {
+  border: none;
+}
+
+.light-theme #app {
+  background-color: #fafafa;
+}
+.light-theme .back-button {
+  background-color: #fafafa;
+  color: black;
+  box-shadow: 0 1px 3px #2b3945;
+}
+.light-theme .back-button:hover {
+  background-color: #fafafa;
+  color: black;
+}
+.light-theme .card,
+.light-theme input,
+.light-theme select {
+  background-color: #fafafa;
+  color: black;
+}
+.light-theme .top-bar,
+.light-theme .top-bar div {
+  background-color: #fff !important;
+  color: black !important;
+}
+.light-theme input:focus,
+.light-theme select:focus {
+  background-color: #fff;
+  color: black;
+}
+.light-theme .country-container .flag img {
+  border: 15px solid #fafafa;
+}
+
+.dark-theme #app,
+.dark-theme .card,
+.dark-theme input,
+.dark-theme select {
+  background-color: #202c37;
+  color: white;
+}
+.dark-theme .back-button {
+  background-color: #202c37;
+  color: white;
+  box-shadow: 0 0 2px #fafafa;
+}
+.dark-theme .back-button:hover {
+  background-color: #202c37;
+  color: white;
+}
+.dark-theme .top-bar,
+.dark-theme .top-bar div {
+  background-color: #2b3945 !important;
+  color: white !important;
+}
+.dark-theme input:focus,
+.dark-theme select:focus {
+  background-color: #202c37;
+  color: white;
+}
+.dark-theme .country-container .flag img {
+  border: 15px solid #2b3945;
+}
+
+/*# sourceMappingURL=style.css.map */
