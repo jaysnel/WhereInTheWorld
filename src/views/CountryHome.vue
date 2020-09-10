@@ -32,7 +32,7 @@
 import axios from 'axios';
 
 export default {
-    name: "FlagHome",
+    name: "CountryHome",
     data() {
         return {
             originalList: [],
@@ -191,6 +191,19 @@ export default {
         .list-of-flags {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    @media(max-width: 1000px) {
+        .search-section {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .search-section input {
+            width: 100%;
+        }
+        .search-section select {
+            margin-left: 12px;
+            width: 200px;
         }
     }
     

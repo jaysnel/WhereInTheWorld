@@ -1,16 +1,16 @@
 <template>
   <div class="home">
-  <FlagHome />
+  <CountryHome />
   </div>
 </template>
 
 <script>
-import FlagHome from './FlagHome.vue';
+import CountryHome from './CountryHome.vue';
 
 export default {
   name: 'Home',
   components: {
-    FlagHome
+    CountryHome
   }
 }
 </script>

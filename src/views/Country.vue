@@ -2,7 +2,7 @@
     <div>
         <div class="country-container">
         <div class="flag">
-            <b-button class="back-button" @click="goBackToHomePage">Back</b-button>
+            <b-button class="back-button" @click="goBackToHomePage"><b-icon-arrow-left class="back-arrow"></b-icon-arrow-left>Back</b-button>
             <img v-bind:src="countryFlag" alt="">
         </div>
         <div class="country-info">
@@ -129,4 +129,31 @@ h1 {
     font-size: 14px;
 }
 
+@media(max-width: 768px) {
+    .country-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: start;
+        padding: 15px;
+    }
+    .country-container .flag img {
+        max-width: 100%;
+        width: 550px;
+        border-radius: 5px;
+        text-align: left;
+    }
+
+    .country-info-text {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        padding: 0;
+    }
+    
+    .multi-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
 </style>

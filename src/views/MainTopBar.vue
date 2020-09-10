@@ -83,6 +83,19 @@ export default {
 
 @media (max-width: 768px) {
     .top-bar-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .top-bar-info img {
+        margin-right: 5px;
+    }
+    .top-bar-info .logo-title {
+        font-size: 15px;
+    }
+    .top-bar-info div {
+        margin: auto;
+    }
+    .top-bar-info {
         width: 375px;
         margin: auto;
     }
